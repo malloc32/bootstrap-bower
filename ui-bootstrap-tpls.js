@@ -966,7 +966,7 @@ angular.module('ui.bootstrap.dateparser', [])
             this.hours = 0;
           }
 
-          if (value === 'PM') {
+          if (value === $locale.DATETIME_FORMATS.AMPMS[1]) {
             this.hours += 12;
           }
         },
